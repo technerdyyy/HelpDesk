@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Helpdesk System Design System - All colors from the design palette */
+
+@layer base {
+  :root {
+    /* Main Background */
+    --background: 180 50% 85%;
+    --foreground: 0 0% 0%;
+
+    /* Cards */
+    --card: 180 65% 75%;
+    --card-foreground: 0 0% 0%;
+
+    /* Popover */
+    --popover: 180 65% 75%;
+    --popover-foreground: 0 0% 0%;
+
+    /* Primary - Main Turquoise */
+    --primary: 174 64% 59%;
+    --primary-foreground: 0 0% 100%;
+
+    /* Secondary - Light Turquoise */
+    --secondary: 180 45% 78%;
+    --secondary-foreground: 0 0% 0%;
+
+    /* Muted */
+    --muted: 180 30% 85%;
+    --muted-foreground: 0 0% 45%;
+
+    /* Accent - Bright Turquoise */
+    --accent: 174 64% 59%;
+    --accent-foreground: 0 0% 100%;
+
+    /* Destructive - Pink from palette */
+    --destructive: 324 94% 57%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Form Elements */
+    --border: 180 20% 70%;
+    --input: 0 0% 100%;
+    --ring: 174 64% 59%;
+
+    /* Design System Colors from Palette */
+    --helpdesk-pink: 324 94% 57%;        /* F40097 */
+    --helpdesk-purple-light: 280 49% 79%; /* DFB2F4 */
+    --helpdesk-yellow: 48 100% 50%;       /* FSE900 */
+    --helpdesk-blue-light: 225 100% 97%;  /* F2F5FF */
+    --helpdesk-teal: 174 64% 59%;         /* 55D6C2 */
+    --helpdesk-purple: 284 47% 35%;       /* 983484 */
+    --helpdesk-blue: 214 59% 46%;         /* 3068BE */
+    --helpdesk-blue-medium: 211 100% 75%; /* 80AFFF */
+    --helpdesk-cyan: 196 100% 62%;        /* 38C2FF */
+    --helpdesk-cyan-light: 185 100% 59%;  /* 2AF5FF */
+
+    /* Status Colors */
+    --status-new: 214 59% 46%;
+    --status-progress: 48 100% 50%;
+    --status-resolved: 142 76% 36%;
+    --status-closed: 0 0% 45%;
+
+    /* Metric Card Colors */
+    --metric-blue: 214 59% 46%;
+    --metric-green: 142 76% 36%;
+    --metric-red: 0 84% 60%;
+    --metric-yellow: 48 100% 50%;
+
+    --radius: 0.5rem;
+
+    /* Sidebar */
+    --sidebar-background: 174 64% 59%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 100%;
+    --sidebar-primary-foreground: 174 64% 59%;
+    --sidebar-accent: 174 54% 65%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 174 44% 75%;
+    --sidebar-ring: 0 0% 100%;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+    --sidebar-background: 240 5.9% 10%;
+    --sidebar-foreground: 240 4.8% 95.9%;
+    --sidebar-primary: 224.3 76.3% 48%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 240 3.7% 15.9%;
+    --sidebar-accent-foreground: 240 4.8% 95.9%;
+    --sidebar-border: 240 3.7% 15.9%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
