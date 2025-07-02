@@ -1,5 +1,6 @@
 import { ReactNode } from 'react';
 import { Sidebar } from './Sidebar';
+import Navbar from './Navbar';
 
 interface LayoutProps {
   children: ReactNode;
@@ -15,6 +16,7 @@ export function Layout({ children, activeItem, onItemClick, showSidebar = true }
 
   return (
     <div className="flex min-h-screen bg-background">
+      <Navbar/>
       <Sidebar activeItem={activeItem} onItemClick={onItemClick} />
       <main className="flex-1">
         {children}

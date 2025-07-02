@@ -20,7 +20,7 @@ export function TicketList({ tickets }: TicketListProps) {
   return (
     <div className="p-6">
       <div className="mb-6">
-        <h2 className="text-xl font-bold text-foreground mb-4">List of Ticket</h2>
+        <h2 className="text-xl font-bold text-foreground mb-4 mt-14 text-center">List of Ticket</h2>
         <div className="flex items-center gap-4 mb-4">
           <Input
             placeholder="Find tickets..."

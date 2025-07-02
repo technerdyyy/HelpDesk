@@ -25,7 +25,7 @@ export function ProfileSettings({ user, onSave }: ProfileSettingsProps) {
   };
 
   return (
-    <div className="p-6 max-w-2xl mx-auto">
+    <div className="p-6 max-w-2xl mx-auto mt-14 overflow-y-auto h-[calc(100vh-3.5rem)]">
       <Card className="bg-card border-0 shadow-sm">
         <CardHeader>
           <CardTitle className="text-xl font-bold">User Profile Settings</CardTitle>

@@ -34,7 +34,7 @@ export function UserProfile({ user, onEditProfile, onGiveFeedback }: UserProfile
               </p>
               <Button 
                 onClick={onGiveFeedback}
-                className="w-full bg-helpdesk-teal hover:bg-helpdesk-teal/90"
+                className="w-full bg-primary hover:bg-helpdesk-teal/90"
               >
                 Submit Feedback
               </Button>

@@ -35,8 +35,8 @@ const NewTicket = () => {
 
   return (
     <Layout activeItem={activeItem} onItemClick={handleItemClick}>
-      <div className="p-6">
-        <h1 className="text-2xl font-bold text-foreground mb-6">Create New Ticket</h1>
+      <div className="p-6 mt-14 overflow-y-auto h-[calc(100vh-3.5rem)]">
+        <h1 className="text-2xl font-bold text-foreground mb-6 text-center">Create New Ticket</h1>
         <TicketForm onSubmit={handleTicketSubmit} />
       </div>
     </Layout>

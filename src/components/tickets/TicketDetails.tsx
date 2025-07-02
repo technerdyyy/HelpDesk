@@ -73,7 +73,7 @@ export function TicketDetails({ ticket, onClose }: TicketDetailsProps) {
           <div className="flex justify-end pt-4">
             <Button 
               onClick={onClose}
-              className="bg-helpdesk-teal hover:bg-helpdesk-teal/90"
+              className="bg-[#03cc17] hover:bg-[#35cf44]"
             >
               Close
             </Button>

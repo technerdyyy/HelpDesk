@@ -40,14 +40,14 @@ export function ForgotPasswordForm({ onSubmit, onSignIn }: ForgotPasswordFormPro
                 className="bg-input border-border"
               />
             </div>
-            <Button type="submit" className="w-full bg-helpdesk-teal hover:bg-helpdesk-teal/90">
+            <Button type="submit" className="w-full bg-[#03cc17] hover:bg-[#35cf44]">
               Submit
             </Button>
             <Button 
               type="button" 
               variant="outline" 
               onClick={onSignIn}
-              className="w-full border-primary text-primary hover:bg-primary/10"
+              className="w-full border-primary text-white bg-helpdesk-blue hover:bg-helpdesk-blue/90"
             >
               Sign In
             </Button>

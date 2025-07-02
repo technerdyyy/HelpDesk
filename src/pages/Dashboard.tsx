@@ -26,9 +26,9 @@ const Dashboard = () => {
 
   return (
     <Layout activeItem={activeItem} onItemClick={handleItemClick}>
-      <div className="p-6">
+      <div className="p-6 mt-14 overflow-y-auto h-[calc(100vh-3.5rem)]">
         <div className="mb-6">
-          <h1 className="text-2xl font-bold text-foreground">Dashboard</h1>
+          <h1 className="text-2xl font-bold text-foreground text-center ">Dashboard</h1>
         </div>
         <DashboardStats stats={mockStats} />
       </div>

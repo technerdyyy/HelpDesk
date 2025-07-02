@@ -25,7 +25,7 @@ export function SignUpForm({ onSignUp, onSignIn }: SignUpFormProps) {
           <CardTitle className="text-2xl font-bold text-card-foreground">
             Helpdesk System
           </CardTitle>
-          <p className="text-muted-foreground">Sign up here</p>
+          <p className="">Sign up here</p>
         </CardHeader>
         <CardContent className="space-y-4">
           <form onSubmit={handleSubmit} className="space-y-4">
@@ -64,13 +64,13 @@ export function SignUpForm({ onSignUp, onSignIn }: SignUpFormProps) {
           <div className="flex justify-between text-sm">
             <button 
               onClick={onSignIn}
-              className="text-primary hover:underline"
+              className="text-red-500 hover:underline"
             >
               Forgot password
             </button>
             <button 
               onClick={onSignIn}
-              className="text-primary hover:underline"
+              className=" hover:underline"
             >
               Sign In
             </button>

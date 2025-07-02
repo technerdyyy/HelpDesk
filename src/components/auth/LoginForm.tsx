@@ -47,7 +47,7 @@ export function LoginForm({ onLogin, onSignUp, onForgotPassword }: LoginFormProp
                 className="bg-input border-border"
               />
             </div>
-            <Button type="submit" className="w-full bg-helpdesk-yellow hover:bg-helpdesk-yellow/90 text-black font-semibold">
+            <Button type="submit" className="w-full bg-[#03cc17] hover:bg-[#35cf44] text-white font-semibold">
               Sign In
             </Button>
           </form>
@@ -55,23 +55,23 @@ export function LoginForm({ onLogin, onSignUp, onForgotPassword }: LoginFormProp
           <div className="flex justify-between text-sm">
             <button 
               onClick={onForgotPassword}
-              className="text-primary hover:underline"
+              className="text-red-500 hover:underline"
             >
               Forgot password
             </button>
             <button 
               onClick={onSignUp}
-              className="text-primary hover:underline"
+              className=" hover:underline"
             >
               Sign Up
             </button>
           </div>
-          
+{/*           
           <div className="text-xs text-muted-foreground text-center mt-4 p-2 bg-muted rounded">
             <p><strong>Demo Login:</strong></p>
             <p>Username: {dummyCredentials.username}</p>
             <p>Password: {dummyCredentials.password}</p>
-          </div>
+          </div> */}
         </CardContent>
       </Card>
     </div>
